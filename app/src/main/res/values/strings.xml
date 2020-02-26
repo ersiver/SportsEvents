@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SportsEvents</string>
+    <string name="contentDesc">image</string>
+    <string name="searchHint"><i>Start typing</i></string>
+    <string name="favourite_teams">Favourite teams</string>
+    <string name="dash">-</string>
+    <string name="coma">,</string>
+</resources>

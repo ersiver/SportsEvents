@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@drawable/background_toolbar"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="100">
+
+
+    <ImageView
+        android:id="@+id/backImageView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/ic_back" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/badgeImageView"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/contentDesc"
+            android:layout_width="34dp"
+            android:layout_height="34dp" />
+
+        <TextView
+            android:id="@+id/thisNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/badgeImageView"
+            android:layout_marginStart="4dp"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/searchImageView"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/ic_search" />
+
+</RelativeLayout>
+
