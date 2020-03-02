@@ -1,7 +1,6 @@
 package com.breiter.sportsevents.data.net;
 
 import com.breiter.sportsevents.data.model.DatabaseResponse;
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Call;
@@ -21,7 +20,6 @@ public class RetrofitClient {
             retrofit = new Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .client(okHttpClient)
-                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
